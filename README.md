@@ -1,8 +1,10 @@
 # Autonomous Mission Simulator
 
-C++ ile geliştirilmiş, otonom araç görev planlama ve telemetri simülasyonu.
+C++ ile geliştirilmiş, otonom araç görev planlama, rota bulma ve telemetri simülasyonu projesidir.
 
-Bu proje, bir aracın belirlenen başlangıç noktasından hedef noktaya engellerden kaçınarak otomatik rota oluşturmasını ve görev sırasında çeşitli telemetri verilerinin simüle edilmesini amaçlamaktadır.
+Bu proje, bir otonom aracın belirlenen başlangıç konumundan hedef konumuna, harita üzerindeki engelleri dikkate alarak otomatik rota oluşturmasını ve görev sırasında araç telemetrisi üretmesini simüle eder.
+
+---
 
 ## 🚀 Özellikler
 
@@ -17,9 +19,14 @@ Bu proje, bir aracın belirlenen başlangıç noktasından hedef noktaya engelle
 - Batarya takibi
 - Sıcaklık simülasyonu
 - İvme verisi
-- Telemetri kayıt sistemi
+- Gerçek zamanlı telemetri
+- Telemetri geçmişi
+- Telemetri dosyasına kayıt
 - Görev durumu takibi
 - Görev sonunda özet rapor
+- Modüler C++ proje yapısı
+
+---
 
 ## 🛰️ Görev Simülasyonu
 
@@ -35,11 +42,11 @@ Harita üzerinde:
 Örnek:
 
 ```text
-A . . . . . . . . .
-* * * * * * * . . .
-. . # # # . * * * .
-. . . . . . . . * .
-. . . . . . . . * *
+A * * * * * * * * *
+. . . . . . . . . *
+. . # # # . . . . *
+. . . . . . . . . *
+. . . . . . . . . *
 . . . . . # . . . *
 . . . . . # . . . *
 . . . . . # . . . *
